@@ -2,7 +2,7 @@
 
 A Flask web application with three endpoints to facilitate the submission, transmission, and retrieval of messages to/from a Discord server and stored in a SQLite3 database.
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project implements a seamless integration between a Flask web application and Discord, allowing users to:
 - Submit text messages through a web interface
@@ -10,29 +10,18 @@ This project implements a seamless integration between a Flask web application a
 - Retrieve and display recent messages (last 30 minutes) from the database
 - Store all messages in a persistent SQLite3 database
 
-## 📋 Table of Contents
 
-- [Features](#features)
-- [Mission Objectives](#mission-objectives)
-- [Endpoints](#endpoints)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Security Considerations](#security-considerations)
-- [License](#license)
+##  Features
 
-## ✨ Features
+ **Web Interface**: User-friendly form for submitting messages
+ **Real-time Discord Integration**: Messages sent immediately to Discord server
+ **Database Storage**: SQLite3 database for persistent message storage
+ **Message Retrieval**: View recent messages with timestamps
+ **Input Validation**: Comprehensive validation and error handling
+ **Flash Messages**: User feedback for successful/failed operations
+ **Responsive Design**: Clean HTML interface
 
-✅ **Web Interface**: User-friendly form for submitting messages
-✅ **Real-time Discord Integration**: Messages sent immediately to Discord server
-✅ **Database Storage**: SQLite3 database for persistent message storage
-✅ **Message Retrieval**: View recent messages with timestamps
-✅ **Input Validation**: Comprehensive validation and error handling
-✅ **Flash Messages**: User feedback for successful/failed operations
-✅ **Responsive Design**: Clean HTML interface
-
-## 🎓 Mission Objectives
+##  Mission Objectives
 
 ### Endpoint 1 - Input Text
 **Description**: This endpoint receives text input from users through a POST request. Users can submit their messages, and any text content submitted through this endpoint will be processed for further transmission.
@@ -58,7 +47,7 @@ This project implements a seamless integration between a Flask web application a
 - Retrieves messages recorded in the last 30 minutes
 - Displays results in a structured format as a response
 
-## 🔌 Endpoints
+##  Endpoints
 
 ### 1. `/` - Main Form (GET)
 ```
@@ -85,7 +74,7 @@ Description: Displays all messages from the last 30 minutes
 Response: HTML page with formatted list of recent messages and timestamps
 ```
 
-## 💻 Installation
+##  Installation
 
 ### Prerequisites
 - Python 3.7+
@@ -115,7 +104,7 @@ source venv/bin/activate
 pip install flask requests
 ```
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Discord Webhook Setup
 
@@ -137,7 +126,7 @@ DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEB
 
 The application uses SQLite3 which requires no additional configuration. The database file (`messages.db`) will be created automatically on first run.
 
-## 🚀 Usage
+##  Usage
 
 1. **Start the Flask application**
 ```bash
@@ -161,14 +150,13 @@ http://localhost:5000/
    - Or navigate to: `http://localhost:5000/messages`
    - See all messages from the last 30 minutes with timestamps
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Flask-Discord-Integration-Project/
 │
 ├── app.py                 # Main Flask application
 ├── messages.db            # SQLite3 database (created automatically)
-├── requirements.txt       # Python dependencies
 ├── .gitignore            # Git ignore file
 └── README.md             # This file
 ```
@@ -198,9 +186,9 @@ def send_to_discord(text):
 @app.route('/messages', methods=['GET'])     # View recent messages
 ```
 
-## 🔐 Security Considerations
+##  Security Considerations
 
-⚠️ **Important Security Notes**:
+ **Important Security Notes**:
 
 1. **Secret Key**: Change the `secret_key` from 'secret' to a strong random value
    ```python
@@ -231,28 +219,28 @@ def send_to_discord(text):
    - Use proper access controls for messages.db
    - Consider encrypting sensitive data
 
-## 📦 Dependencies
+##  Dependencies
 
 - **Flask**: Web framework for Python
 - **Requests**: HTTP library for sending webhook requests
 - **sqlite3**: Built-in Python database library
 - **werkzeug**: Utility library for routing
 
-## 🛡️ Copyright & Protection
+##  Copyright & Protection
 
 **This project is public but protected against unauthorized copying or use.**
 
 All code, documentation, and associated materials are the intellectual property of the author. While the repository is publicly accessible, any reproduction, modification, or distribution of this code for commercial purposes without explicit permission is prohibited.
 
-## 📝 License
+##  License
 
 This project is provided as-is for educational and authorized use only.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit issues or pull requests.
 
-## 📧 Support
+##  Support
 
 For issues, questions, or feedback, please open an issue on GitHub.
 
@@ -261,3 +249,9 @@ For issues, questions, or feedback, please open an issue on GitHub.
 **Author**: Sagi Matias (sagimatias25)
 **Created**: November 2025
 **Status**: Active Development
+
+## Contact
+
+**GitHub**: [@sagimatias25](https://github.com/sagimatias25)
+
+---
